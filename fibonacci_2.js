@@ -17,7 +17,7 @@ while(fib_arr[fib_arr.length-1] < limit){
 	fib_arr.push(fib_arr[fib_arr.length-1] + fib_arr[fib_arr.length-2]);
 }
 
-console.log(fib_arr);
+// console.log(fib_arr); --> USE THIS TO VISUALIZE THE SEQUENCE
 
 var sum_evens=0
 

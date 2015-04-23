@@ -31,7 +31,7 @@ var prime_factors = function(number){
 		}
 	}
 
-	// console.log("These are the factors for that number:  " + factor_array);
+	// console.log("These are the factors for that number:  " + factor_array);  --> VISUALIZATION PURPOSES
 
 	var prime_factor_array = []
 
@@ -41,7 +41,8 @@ var prime_factors = function(number){
 		}
 	}
 
-	// console.log("These are the prime factors for that number:  " + prime_factor_array);
+	// console.log("These are the prime factors for that number:  " + prime_factor_array);--> VISUALIZATION PURPOSES
+	
 	console.log("The largest prime factor of " + user_number + " is: " + Math.max.apply(Math, prime_factor_array));
 };
 

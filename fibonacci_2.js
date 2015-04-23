@@ -6,25 +6,29 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed 
 // four million, find the sum of the even-valued terms.
 
+var user_input = prompt("What huge ass number would you like to limit your fibonacci sequence to?")
+
+var fibonacci_evens = function (limit){
+
 var fib_arr = [1,1]
 
-var limit = 4000000
-
-while(fib_arr[fib_arr.length-1] < limit){
-	if (fib_arr[fib_arr.length-1] > 3000000){
+while((fib_arr[fib_arr.length-1]) < limit){
+	if (((fib_arr[fib_arr.length-1]) + (fib_arr[fib_arr.length-2])) > limit){ 
 		break;
 	}
 	fib_arr.push(fib_arr[fib_arr.length-1] + fib_arr[fib_arr.length-2]);
-}
-
-// console.log(fib_arr); --> USE THIS TO VISUALIZE THE SEQUENCE
-
-var sum_evens=0
-
-for (var i = 0; i<fib_arr.length; i++){
-	if(fib_arr[i]%2 === 0){
-		sum_evens = sum_evens + fib_arr[i];
 	}
-}
 
-console.log(sum_evens);
+	console.log(fib_arr); //--> USE THIS TO VISUALIZE THE SEQUENCE
+
+	var sum_evens=0
+
+	for (var i = 0; i<fib_arr.length; i++){
+		if(fib_arr[i]%2 === 0){
+			sum_evens = sum_evens + fib_arr[i];
+		}
+	}
+	console.log("Check it!  Here is the sum of the even numbers included in that fibonacci sequence: " + sum_evens);
+};
+
+fibonacci_evens(user_input);

@@ -15,13 +15,12 @@ for (var i=1;i<1000;i++){
 console.log(x);
 
 
+// THIS IS A MUCH MORE COMPLEX WAY OF SAYING WHAT I SAID UP THERE
+
 // var range = []
 // for (var i = 1; i<1000;i++){
 // 	range.push(i);
 // }
-
-
-// THIS IS A MUCH MORE COMPLEX WAY OF SAYING WHAT I SAID UP THERE
 // if ((i%5 === 0) && (i%3 === 0)){
 // 	y = y+i;
 // }else if(i%5 === 0){
